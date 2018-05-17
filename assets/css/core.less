@@ -1,0 +1,97 @@
+/*!
+==============================
+Adam of Moore, Copyright 2018
+==============================
+*/
+
+
+// Reset 
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline;}
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+a,button{cursor:pointer;outline:0;}
+
+
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+// Typography
+body { 
+	font-family: 'Open Sans', sans-serif; 
+	color: #7C8896;
+	background: #0A1422 url('../images/star-bgr.png');
+}
+
+h1, h2 { color: #E9EEF7; }
+
+h2 { font-size: 24px; }
+		
+p { font-size: 17px; }
+
+
+// Buttons
+.btn-primary {
+	background: #CDA800;
+	border: none;
+	border-radius: 24px;
+	padding: 12px 48px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background 200ms ease-in;
+	
+	&:hover { background: lighten(#CDA800, 5%); }
+}
+
+
+// Hero
+.hero {
+	text-align: center;
+	position: relative;
+	height: 90vh;
+	
+	.hero-content {
+		max-width: 540px;
+		margin: auto;
+		padding: 0 15px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translate3d(0,-50%,0);			
+	}
+	
+	h1 {
+		font-size: 31px;
+		margin-bottom: 10px;	
+		animation-delay: 200ms;
+	}
+	
+	p { 
+		font-size: 20px;
+		margin-bottom: 40px;
+		animation-delay: 400ms;
+	}	
+	
+	.btn-primary { animation-delay: 600ms; }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp { animation-name: fadeInUp; }
