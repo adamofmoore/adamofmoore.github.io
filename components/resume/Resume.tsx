@@ -1,5 +1,6 @@
 "use client";
 
+import styled from "styled-components";
 import { ContactBlock } from "./ContactBlock";
 import { EducationSection } from "./EducationSection";
 import { ExperienceSection } from "./ExperienceSection";
@@ -14,10 +15,10 @@ export function Resume() {
 		<Page>
 			<Container>
 				<HeaderRow>
-					<div>
+					<HeaderLeft>
 						<Name>{name}</Name>
 						<Title>{title}</Title>
-					</div>
+					</HeaderLeft>
 					<ContactBlock contacts={contacts} />
 				</HeaderRow>
 				<Section>
@@ -33,3 +34,8 @@ export function Resume() {
 		</Page>
 	);
 }
+
+const HeaderLeft = styled.div`
+	display: grid;
+	gap: 8px;
+`;

@@ -22,13 +22,13 @@ export const Container = styled.div`
 export const HeaderRow = styled.header`
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 14px;
+	gap: 12px;
 	margin-bottom: 28px;
 
 	${media.tablet`
 		grid-template-columns: 1.2fr 0.8fr;
 		align-items: start;
-		gap: 18px;
+		gap: 16px;
 		margin-bottom: 34px;
 	`}
 `;
@@ -45,7 +45,6 @@ export const Name = styled.h1`
 `;
 
 export const Title = styled.p`
-	margin: 12px 0 0;
 	font-size: 1.6rem;
 	line-height: 1.4;
 	opacity: 0.85;
@@ -123,11 +122,11 @@ export const Card = styled.div`
 
 export const Body = styled.p`
 	margin: 0;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	line-height: 1.6;
 
 	${media.tablet`
-		font-size: 1.6rem;
+		font-size: 1.7rem;
 	`}
 `;
 
