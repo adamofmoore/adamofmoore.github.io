@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 import type { ContactItem } from "./resumeData";
+import { media } from "../../mixins/media";
 
 export function ContactBlock({ contacts }: Props) {
 	return (
@@ -41,13 +42,23 @@ const List = styled.ul`
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	display: grid;
-	gap: 6px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px;
 
-	@media (min-width: 768px) {
+	${media.tabletMax`
+        li:last-of-type {
+            margin-left: auto;
+        }    
+    `}
+
+	${media.tablet`
+        display: grid;
+        gap: 6px;
 		justify-items: end;
 		text-align: right;
-	}
+	`}
 `;
 
 const Item = styled.li`
