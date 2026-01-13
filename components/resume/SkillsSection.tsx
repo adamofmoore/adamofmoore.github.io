@@ -40,18 +40,17 @@ export function SkillsSection({ skillsAndExpertise, technicalSkills, designSkill
 
 const TwoCol = styled.div`
 	display: grid;
-	gap: 14px;
+	gap: 12px;
 
 	${media.tablet`
 		grid-template-columns: 1fr 1fr;
-		gap: 18px;
+		gap: 16px;
 	`}
 `;
 
 const ColTitle = styled.h3`
-	margin: 0 0 10px;
-	font-size: 14px;
-	opacity: 0.85;
+	margin: 0 0 12px;
+	font-size: 1.4rem;
 `;
 
 const List = styled.ul`
@@ -64,11 +63,11 @@ const List = styled.ul`
 	li {
 		display: inline-flex;
 		align-items: center;
-		padding: 8px 10px;
+		padding: 8px 12px;
 		border-radius: 999px;
 		border: 1px solid rgba(255, 255, 255, 0.14);
 		background: rgba(255, 255, 255, 0.04);
-		font-size: 13px;
+		font-size: 1.4rem;
 		line-height: 1;
 		white-space: nowrap;
 	}

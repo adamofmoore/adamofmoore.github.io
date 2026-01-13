@@ -29,7 +29,7 @@ export type ResumeData = {
 
 export const resumeData: ResumeData = {
 	name: "Adam Moore",
-	title: "Front End Designer & UX Engineer",
+	title: "Lead UX Engineer",
 	contacts: [
 		{
 			type: "email",
@@ -38,18 +38,12 @@ export const resumeData: ResumeData = {
 			href: "mailto:adamofmoore@gmail.com",
 		},
 		{ type: "location", label: "Location", value: "Sacramento, CA" },
-		{
-			type: "link",
-			label: "LinkedIn",
-			value: "LinkedIn",
-			href: "https://linkedin.com/in/adam-moore-85154632/",
-		},
 	],
 	sections: {
-		professionalSummary: "Senior developer with over 20 years of professional experience building websites and apps for mobile and desktop platforms. Strong focus on high-quality design, attention to detail, and clean, reusable, high-performance code.",
+		professionalSummary: "Over 20 years of professional experience taking websites and apps for both mobile and desktop platforms from design to reality. I have a strong focus on high-quality design, attention to detail, and clean, reusable, high-performance code.",
 		skillsAndExpertise: ["React", "React Native", "Next.js", "TypeScript", "Design System Mgmt.", "Styled Components", "Git", "SCSS", "Webpack", "WordPress", "Storybook", "Lighthouse"],
 		technicalSkills: ["React", "React Native", "Next.js", "TypeScript", "Styled Components", "Git", "SCSS", "Webpack", "WordPress", "Storybook", "Lighthouse"],
-		designSkills: ["UI/UX Design", "Design Systems", "Figma", "Sketch", "Adobe CC", "Branding", "Prototyping", "Wireframing", "Accessibility"],
+		designSkills: ["UI/UX", "Design Systems", "Figma", "Sketch", "Adobe CC", "Branding", "Prototyping", "Wireframing", "Accessibility"],
 		experience: [
 			{
 				role: "Lead UX Engineer",

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import styled from "styled-components";
 import type { ContactItem } from "./resumeData";
 
@@ -22,6 +22,11 @@ export function ContactBlock({ contacts }: Props) {
 					}
 					return <Item key={key}>{c.value}</Item>;
 				})}
+				<li>
+					<Link href="https://linkedin.com/in/adam-moore-85154632/" target="_blank" rel="noreferrer">
+						<Image src="/images/linkedin.png" alt="LinkedIn Logo" width={28} height={24} />
+					</Link>
+				</li>
 			</List>
 		</Wrap>
 	);
@@ -37,7 +42,7 @@ const List = styled.ul`
 	padding: 0;
 	margin: 0;
 	display: grid;
-	gap: 8px;
+	gap: 6px;
 
 	@media (min-width: 768px) {
 		justify-items: end;

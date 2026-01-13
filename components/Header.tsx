@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "./Layout/Container";
+import { Container } from "./layout/Container";
 
 export const Header = () => {
 	return (
