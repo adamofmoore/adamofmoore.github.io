@@ -83,5 +83,5 @@ const Bullets = styled.ul`
 	margin: 10px 0 0;
 	padding-left: 18px;
 	display: grid;
-	gap: 8px;
+	gap: 4px;
 `;

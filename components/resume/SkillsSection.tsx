@@ -5,12 +5,11 @@ import { media } from "../../mixins/media";
 import { Card, Section, SectionTitle } from "./ResumeStyles";
 
 type Props = {
-	skillsAndExpertise: string[];
 	technicalSkills: string[];
 	designSkills: string[];
 };
 
-export function SkillsSection({ skillsAndExpertise, technicalSkills, designSkills }: Props) {
+export function SkillsSection({ technicalSkills, designSkills }: Props) {
 	return (
 		<Section>
 			<SectionTitle>Skills &amp; Expertise</SectionTitle>

@@ -27,7 +27,7 @@ export function Resume() {
 						<Body>{sections.professionalSummary}</Body>
 					</Card>
 				</Section>
-				<SkillsSection skillsAndExpertise={sections.skillsAndExpertise} technicalSkills={sections.technicalSkills} designSkills={sections.designSkills} />
+				<SkillsSection technicalSkills={sections.technicalSkills} designSkills={sections.designSkills} />
 				<ExperienceSection items={sections.experience} />
 				<EducationSection items={sections.education} />
 			</Container>

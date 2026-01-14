@@ -19,7 +19,6 @@ export type ResumeData = {
 	contacts: ContactItem[];
 	sections: {
 		professionalSummary: string;
-		skillsAndExpertise: string[];
 		technicalSkills: string[];
 		designSkills: string[];
 		experience: ExperienceItem[];
@@ -41,9 +40,8 @@ export const resumeData: ResumeData = {
 	],
 	sections: {
 		professionalSummary: "Over 20 years of professional experience taking websites and apps for both mobile and desktop platforms from design to reality. I have a strong focus on high-quality design, attention to detail, and clean, reusable, high-performance code.",
-		skillsAndExpertise: ["React", "React Native", "Next.js", "TypeScript", "Design System Mgmt.", "Styled Components", "Git", "SCSS", "Webpack", "WordPress", "Storybook", "Lighthouse"],
 		technicalSkills: ["React", "React Native", "Next.js", "TypeScript", "Styled Components", "Git", "SCSS", "Webpack", "WordPress", "Storybook", "Lighthouse"],
-		designSkills: ["UI/UX", "Design Systems", "Figma", "Sketch", "Adobe CC", "Branding", "Prototyping", "Wireframing", "Accessibility"],
+		designSkills: ["UI/UX", "Design Systems", "A/B Testing", "Figma", "Sketch", "Adobe CC", "Branding", "Prototyping", "Wireframing", "Accessibility"],
 		experience: [
 			{
 				role: "Lead UX Engineer",
