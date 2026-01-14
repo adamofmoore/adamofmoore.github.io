@@ -62,7 +62,7 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-	font-size: 14px;
+	font-size: 1.4rem;
 	line-height: 1.45;
 	opacity: 0.9;
 `;

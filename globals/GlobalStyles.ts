@@ -89,6 +89,14 @@ const reset = css`
 		font-family: var(--tr-font-family);
 		vertical-align: baseline;
 	}
+	* {
+		margin: 0;
+	}
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
 	/* HTML5 display-role reset for older browsers */
 	article,
 	aside,
@@ -158,14 +166,24 @@ const GlobalStyles = createGlobalStyle`
     font-display: swap;
   }
 
-  * {
-      margin: 0;
+  :root {
+    font-size: 62.5%;
+    --tr-font-family: "Special Gothic", Arial, sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
   }
 
-  *,
-  *::before,
-  *::after {
-      box-sizing: border-box;
+  body {
+      min-height:100%;
+      font-size: 1.7rem;
+      line-height: 2.8rem;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Special Gothic", Arial, sans-serif;
+      background: #151515;
+      text-wrap: pretty;
+      color: #e0e0e0;
   }
 
   a {
@@ -177,30 +195,8 @@ const GlobalStyles = createGlobalStyle`
     &:focus {
       text-decoration: underline;
     }
-  }
+  }  
 
-  html, body {
-    height: 100%;
-  }
-
-  :root {
-    font-size: 62.5%;
-
-    body {
-      min-height:100%;
-      font-size: 1.7rem;
-      line-height: 2.8rem;
-      -webkit-font-smoothing: antialiased;
-      font-family: "Special Gothic", "Century Gothic", Arial, "Helvetica Neue", sans-serif;
-      background: #151515;
-      text-wrap: pretty;
-      color: #e0e0e0;
-    }
-  }
-
-  /*
-    6. Improve media defaults
-  */
   img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;

@@ -39,11 +39,11 @@ const Row = styled.div`
 
 const School = styled.h3`
 	margin: 0;
-	font-size: 16px;
+	font-size: 1.6rem;
 `;
 
 const Dates = styled.div`
-	font-size: 13px;
+	font-size: 1.3rem;
 	opacity: 0.75;
 
 	@media (min-width: 768px) {

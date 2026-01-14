@@ -62,7 +62,7 @@ const RoleRow = styled.div`
 
 const Role = styled.h3`
 	margin: 0;
-	font-size: 16px;
+	font-size: 1.6rem;
 `;
 
 const Company = styled.span`
@@ -70,7 +70,7 @@ const Company = styled.span`
 `;
 
 const Dates = styled.div`
-	font-size: 13px;
+	font-size: 1.3rem;
 	opacity: 0.75;
 
 	${media.tablet`

@@ -59,7 +59,7 @@ const Content = styled.div`
 
 const Title = styled.h3`
 	margin: 0;
-	font-size: 18px;
+	font-size: 1.8rem;
 `;
 
 const Body = styled.p`
